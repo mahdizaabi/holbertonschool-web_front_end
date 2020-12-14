@@ -382,8 +382,8 @@ template {
   --footer-padding: 5rem 0 1rem;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html {
@@ -416,16 +416,19 @@ a:active {
 .card-category {
   color: var(--color-primary);
 }
-.section{
-    padding: var(--section-padding);
+.section {
+  padding: var(--section-padding);
 }
-
 .section-header {
   text-align: var(--section-header-align);
-  padding: var(--section-header-padding)
+  padding: var(--section-header-padding);
 }
-.section-body{
-    padding: var(--section-body-padding);
+.section-body {
+  padding: var(--section-body-padding);
+}
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 .section-title {
   font-family: var(--font-family-title);
@@ -440,6 +443,11 @@ a:active {
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
@@ -449,11 +457,6 @@ h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
-.container {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .footer {
-    padding: var(--footer-padding);
+  padding: var(--footer-padding);
 }
