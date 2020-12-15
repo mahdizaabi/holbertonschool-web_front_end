@@ -484,12 +484,12 @@ h6 {
   display: var(--nav-item-display);
   margin: var(--nav-item-margin);
 }
-.nav-link {
+.nav .nav-link {
   display: block;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   
 }
-.nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
