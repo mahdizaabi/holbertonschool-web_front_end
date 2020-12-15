@@ -486,11 +486,10 @@ h6 {
 }
 .nav-link {
   display: block;
-  padding-top: 50%;
-  padding-bottom: 50%;
-  padding-left: 100%;
-  padding-right: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  
 }
 .nav-link:hover {
-  background-color: var(--nav-item-link-hover);
+  color: var(--nav-item-link-hover);
 }
