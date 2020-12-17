@@ -1,0 +1,7 @@
+/* variables */
+$primeColor:#3D3D3D;
+$secondColor:#FF0000;
+body{
+  color: $primeColor;
+  > .red {
+    color: $secondColor;}}

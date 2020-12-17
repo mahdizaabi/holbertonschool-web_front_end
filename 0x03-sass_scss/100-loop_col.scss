@@ -1,0 +1,12 @@
+@function set-width($width) {
+  $result: 100%;
+  $result: $result / $width;
+  @return $result;
+}
+
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    width: set-width($i)}
+} 
+  
+
