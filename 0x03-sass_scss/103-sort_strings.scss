@@ -1,0 +1,10 @@
+/* sorting strings */
+@import '103-sort_list';
+$newlist: ();
+$order: a b c d e f g h i j k l m n o p q r s t u v w x y z;
+@each $character in $order {
+  @each $name in $list_to_sort {
+    @if str-slice($name, 1, 1) == $character {
+      $newlist: append($newlist, $name)}
+  }}
+@debug $newlist;
