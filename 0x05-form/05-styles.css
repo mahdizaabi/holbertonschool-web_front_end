@@ -896,6 +896,8 @@ textarea:focus {
   font-size: var(--font-size-small);
   max-height: 0;
   transition: 0.3s;
+  /* overflow : hide the text(text height is bigger than 
+  the space where its contained (because max-height = 0) */
   overflow: hidden;
 }
 
