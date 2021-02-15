@@ -10,7 +10,7 @@ function createClassRoom(numbersOfStudents ){
     }
     return students;
 }
-/* Closure calling students 10 times */
+/* Closure calling createclassrom 10 times */
 const classRoom = createClassRoom(10);
 
 /* Test */
