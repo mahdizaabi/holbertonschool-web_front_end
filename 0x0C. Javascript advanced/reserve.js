@@ -1,4 +1,5 @@
 function changeMode(size, weight, transform, background, color) {
+    /* Set the appropriate style for every mode */
     return function () {
       document.body.style.fontSize = size;
       document.body.style.fontWeight = weight;
@@ -7,7 +8,6 @@ function changeMode(size, weight, transform, background, color) {
       document.body.style.color = color;
     };
   }
-  
   function createButton(buttonName, mode) {
       return function(){
           const btn = document.createElement("button");
@@ -21,25 +21,26 @@ function changeMode(size, weight, transform, background, color) {
   }
   
   function main() {
-    let spooky = changeMode(9, "bold", "uppercase", "pink", "green");
     const bodyx = document.querySelector("body");
     bodyx.innerText = "holberton";
-    const btnSpooky = document.createElement("button");
-    btnSpooky.setAttribute("id", "spooky");
-    btnSpooky.innerText = "spooky";
-    document.body.appendChild(btnSpooky);
-    btnSpooky.addEventListener("click", (e) => {
-      spooky();
-    });
-  
-  
-    let darkStyle = changeMode(12, "bold", "capitalize", "black", "white");
-    const test = createButton('darkx', darkStyle)
-    test()
-  
+    let spooky = changeMode(9, "bold", "uppercase", "pink", "green");
+    let darkMode  = changeMode(12, "bold", "capitalize", "black", "white");
+    let screamMode  = changeMode(12, "normal", "lowercase", "white", "black");
+    const spookyStyle = createButton('spooky', spooky)();
+    const darkStyle = createButton('Dark mode', darkMode )();
+    const screamStyle = createButton('Scream mode', screamMode)();
+    
   
   
     
+  
+  
+  
+  
+  
+  
+  
+   
   
   
   
