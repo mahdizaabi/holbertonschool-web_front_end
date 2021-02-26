@@ -87,7 +87,7 @@
         updateCart(divX);
       }
 
-      //deserialize Json strig and loop through the object properties
+      //deserialize Json strig and loop through the object
       function updateCart(divX) {
         const currentList = JSON.parse(window.sessionStorage["card"]);
         if (!Object.keys(currentList).length) {
@@ -99,7 +99,7 @@
           divX.appendChild(gekauftProduktenList);
           for (const [key, value] of Object.entries(currentList)) {
             let i = document.createElement("li");
-            i.innerHTML = `${key} x ${value} <a>">(remove)<a/>`;
+            i.innerHTML = `${key} x ${value} <a>"(remove)<a/>`;
             i.addEventListener("click", () => {
               removeItemfromCart(key);
             });
